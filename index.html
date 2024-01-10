@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Space Turism Website</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./Home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="img/png" href="./assets/logo/Path.png" />
+  </head>
+  <body class="bg-1">
+    <nav class="nav">
+      <img class="nav-star" src="./assets/logo/Path.png" />
+      <img id="nav-rectangle" src="./assets/logo/Rectangle.png" />
+      <div>
+        <div class="nav-bg-links btn-active">
+          <button>
+            <a href="#" onclick="navigateTo('Home')">
+              <h3><b>00</b> Home</h3>
+            </a>
+          </button>
+          <button>
+            <a href="#" onclick="navigateTo('Destination')">
+              <h3><b>01</b> Destination</h3>
+            </a>
+          </button>
+          <button>
+            <a href="#" onclick="navigateTo('Crew')">
+              <h3><b>02</b> Crew</h3>
+            </a>
+          </button>
+          <button>
+            <a href="#" onclick="navigateTo('Technology')">
+              <h3><b>03</b> Tehnology</h3>
+            </a>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section id="Home" class="container-wrapper">
+      <div class="content-detalis">
+        <h2 class="subtitle">SO, YOU WANT TO TRAVEL TO</h2>
+        <h1 class="title">SPACE</h1>
+        <p class="ph-body">
+          Let’s face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we’ll give you a truly out of this world
+          experience!
+        </p>
+      </div>
+      <div class="explore-more-container">
+        <button class="explore-botton" onclick="navigateTo('Destination')">
+          EXPLORE
+        </button>
+      </div>
+    </section>
+    <section id="Destination" class="window-navigate"></section>
+
+    <section id="Crew" class="window-navigate"></section>
+
+    <section id="Technology" class="window-navigate"></section>
+    <script src="./index.js" async defer></script>
+  </body>
+</html>
